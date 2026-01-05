@@ -14,17 +14,17 @@ export default function Header() {
 
       {/* Navigation */}
       <nav className="flex gap-6 text-lg font-semibold">
-        <Link href="/">Home</Link>
-        <Link href="/about" className="hover:text-red-500 transition">About</Link>
-        <Link href="/blog" className="hover:text-red-500 transition">Blog</Link>
+        <Link href="/" className="hover:text-red-500 hover:bg-blue-900 transition">Home</Link>
+        <Link href="/about" className="hover:text-red-500 hover:bg-blue-900 transition">About</Link>
+        <Link href="/blog" className="hover:text-red-500 hover:bg-blue-900 transition">Blog</Link>
 
         {/* Section links only for Home page */}
         {isHome && (
           <>
-            <a href="#services" className="hover:text-red-500 transition">Services</a>
-            <a href="#statistics" className="hover:text-red-500 transition">Statistics</a>
-            <a href="#dashboard" className="hover:text-red-500 transition">Dashboard</a>
-            <a href="#contact" className="hover:text-red-500 transition">Contact</a>
+            <a href="#services" className="hover:text-red-500 hover:bg-blue-900 transition">Services</a>
+            <a href="#statistics" className="hover:text-red-500 hover:bg-blue-900 transition">Statistics</a>
+            <a href="#dashboard" className="hover:text-red-500 hover:bg-blue-900 transition">Dashboard</a>
+            <a href="#contact" className="hover:text-red-500 hover:bg-blue-900 transition">Contact</a>
           </>
         )}
       </nav>
